@@ -26,6 +26,7 @@
     <main class="tr-main">
         <div class="tr-grid">
             <section class="tr-grid__left">
+                
                 <!-- Left column content goes here -->
                 <div class="input-group mb-3" style="max-width: 300px;">
                     <label class="input-group-text" for="difficultySelect">Select Difficulty</label>
@@ -35,6 +36,22 @@
                         <option value="hard">Hard</option>
                     </select>
                 </div>
+
+                <div class="tr-test-area mt-4">
+                    <div class="tr-sample-text mb-3 p-3 bg-light rounded">
+                        <span id="sampleText">
+                            The quick brown fox jumps over the lazy dog.
+                        </span>
+                    </div>
+                    <textarea id="typingInput" class="form-control mb-3" rows="3" placeholder="Start typing here..."
+                        aria-label="Typing input"></textarea>
+                    <div class="d-flex gap-2">
+                        <button id="startBtn" class="btn btn-success" type="button">Start</button>
+                        <button id="stopBtn" class="btn btn-danger" type="button">Stop</button>
+                        <button id="retryBtn" class="btn btn-secondary" type="button">Retry</button>
+                    </div>
+                </div>
+
             </section>
             <aside class="tr-grid__right">
                 <!-- Right column content goes here -->
